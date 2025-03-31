@@ -16,7 +16,8 @@ const path = require('path');
 
 //RUTAS FRONTEND localhost:3000/
 app.use('/',express.static(path.resolve('views','home'))); //INICIO
-app.use('/login',express.static(path.resolve('views','login'))); //LOGIN
+app.use('/cuenta',express.static(path.resolve('views','cuenta'))); //CUENTA
+app.use('/planes',express.static(path.resolve('views','planes'))); //PLANES
 app.use('/styles',express.static(path.resolve('views','css'))); //ESTILOS
 app.use('/components',express.static(path.resolve('views','components'))); //COMPONENTES JS
 app.use('/images',express.static(path.resolve('views','img'))); //IMAGENES
